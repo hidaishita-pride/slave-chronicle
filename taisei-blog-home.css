@@ -1,0 +1,276 @@
+@charset"UTF-8";
+body{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+header{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+
+.header-background{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  height:500px;
+}
+.background{
+  display:none;
+  position:absolute;
+  top:0;
+  width:100%;
+}
+.header-title{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: white;
+}
+.header-title h1{
+  padding-left: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.twitter-icon{
+  float:right;
+  border-radius: 40px;
+  transition: all 1s;
+}
+.twitter-sticky{
+  position:fixed;
+  z-index: 5;
+  right:5%;
+  top:3%;
+  border-radius: 40px;
+  transition: all 1s;
+}
+.twitter-icon:hover{
+  transform: scale(1.5);
+}
+.instagram-icon{
+  float:right;
+  border-radius: 40px;
+  transition: all 1s;
+}
+.instagram-sticky{
+  position:fixed;
+  z-index: 5;
+  right:1%;
+  top:3%;
+  border-radius: 40px;
+  transition: all 1s;
+}
+.instagram-icon:hover{
+  transform: scale(1.5);
+}
+/*スティッキーヘッダー実装*/
+.sticky{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:5;
+}
+button{
+  position: absolute;
+  top:200px;
+  right:0;
+  padding:20px;
+  background-color: #EEEEEE;
+}
+#nav-related-button{
+  display: none;
+}
+/*ここから消えるナビゲーション実装*/
+aside{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  height:100%;
+  width:350px;
+  position:fixed;
+  top:0;
+  left:-350px;
+  background-color: rgba(0,0,0,1);
+  z-index: 10;
+}
+aside ul{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  list-style: none;
+}
+aside li{
+  width:100%;
+  height:10%;
+  padding:30px 20px 20px 50px;
+  transition:all 1s;
+}
+aside a{
+  color:white;
+  text-decoration: none;
+}
+aside li:hover{
+  background-color: rgba(255,255,255,0.8);
+}
+aside button{
+  margin:0;
+  padding:0;
+  border:none;
+  display: block;
+  position:fixed;
+  top:0px;
+  left:0px;
+  z-index: 40;
+  transition:all 0.5s;
+}
+.opening{
+  margin:0;
+  padding:0;
+  border:none;
+  display: block;
+  position:fixed;
+  top:0px;
+  left:350px;
+  transition:all 0.7s;
+}
+main{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  height:1100px;
+}
+.main-container{
+  margin-left: 18%;
+  padding:0;
+  overflow: hidden;
+  width:50%;
+  border: 1px solid black;
+  float:left;
+}
+.article-container{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+}
+.article-container h1{
+  text-align: center;
+}
+.articles{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  border-top: 1px solid black;
+  height:80%;
+}
+.article{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  height:20%;
+  position:relative;
+  border-bottom: 1px solid black;
+}
+.article h2{
+  position: absolute;
+  bottom:100px;
+  left:0;
+  background-color: orange;
+  font-size: 30px;
+  padding:17px 5px;
+}
+.article p{
+  margin:0;
+  position:absolute;
+  top:0px;
+  right:0;
+  background-color: yellow;
+  padding:5px;
+  border-radius: 5px;
+}
+time{
+  padding:10px;
+}
+#ibis{
+  color:blue;
+}
+/*ここからサイド*/
+.side-container{
+  margin-right: 1%;
+  padding-left: 10px;
+  overflow: hidden;
+  width:30%;
+  border: 1px solid blue;
+  float:right;
+}
+
+.side-name{
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+}
+.side-name h2{
+  text-align: center;
+}
+.previous{
+  position: absolute;
+  right:25%;
+  top:650px;
+  display: none;
+}
+.next{
+  position:absolute;
+  right:8%;
+  top:650px;
+}
+/*ここからスライドショー関係*/
+.side-picture{
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  height:300px;
+}
+.slide{
+  position: absolute;
+  right:4%;
+  display: none;
+}
+.active{
+  display: block;
+}
+footer{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  height:200px;
+  background-color: navy;
+}
+.footer-container{
+  margin:30px;
+}
+.footer-container img{
+  border-radius: 60px;
+}
+footer h3{
+  color:white;
+}
+/*ここからホバーアクション*/
+.nife{
+  color:red;
+  transition:all 1s;
+  transform: rotate(-40deg);
+}
+.nife:hover{
+  color:navy;
+  transform: scale(3);
+}
