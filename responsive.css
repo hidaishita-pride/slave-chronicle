@@ -1,0 +1,283 @@
+@media(max-width:450px){
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+header{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+.header-background{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  height:200px;
+}
+.background{
+  display:none;
+  position:absolute;
+  top:0;
+  width:100%;
+  height:200px;
+}
+.header-title{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: white;
+}
+.header-title h1{
+  padding-left: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.twitter-icon{
+  float:right;
+  border-radius: 40px;
+  transition: all 1s;
+  width:5%;
+  height:5%;
+}
+.twitter-sticky{
+  position:fixed;
+  z-index: 5;
+  right:5%;
+  top:3%;
+  border-radius: 40px;
+  transition: all 1s;
+  width:2%;
+  height:2%;
+}
+.twitter-icon:hover{
+  transform: scale(1.5);
+}
+.instagram-icon{
+  float:right;
+  border-radius: 40px;
+  transition: all 1s;
+  width:5%;
+  height:5%;
+}
+.instagram-sticky{
+  position:fixed;
+  z-index: 5;
+  right:1%;
+  top:3%;
+  border-radius: 40px;
+  transition: all 1s;
+  width:2%;
+  height:2%;
+}
+.instagram-icon:hover{
+  transform: scale(1.5);
+}
+.sticky{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:5;
+}
+button{
+  position: absolute;
+  top:200px;
+  right:0;
+  padding:20px;
+  background-color: #EEEEEE;
+}
+#nav-related-button{
+  display: none;
+}
+/*ここから消えるナビゲーション実装*/
+aside{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  height:100%;
+  width:80%;
+  position:fixed;
+  top:0;
+  left:-80%;
+  background-color: rgba(0,0,0,1);
+  z-index: 10;
+}
+aside ul{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  list-style: none;
+}
+aside li{
+  width:100%;
+  height:10%;
+  padding:30px 20px 20px 50px;
+  transition:all 1s;
+}
+aside a{
+  color:white;
+  text-decoration: none;
+}
+aside li:hover{
+  background-color: rgba(255,255,255,0.8);
+}
+aside button{
+  margin:0;
+  padding:0;
+  border:none;
+  display: block;
+  position:fixed;
+  top:0px;
+  left:0px;
+  z-index: 40;
+  transition:all 0.5s;
+  width:5%;
+  height:5%;
+}
+.opening{
+  margin:0;
+  padding:0;
+  border:none;
+  display: block;
+  position:fixed;
+  top:0px;
+  left:80%;
+  transition:all 0.7s;
+}
+main{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  height:1800px;
+}
+.main-container{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  height:60%;
+}
+.article-container{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+}
+.article-container h1{
+  text-align: center;
+}
+.articles{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  border-top: 1px solid black;
+}
+.article{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  position:relative;
+  border-bottom: 1px solid black;
+}
+.article h2{
+  position: absolute;
+  bottom:100px;
+  left:0;
+  background-color: orange;
+  font-size: 20px;
+  padding:17px 5px;
+}
+.article p{
+  margin:0;
+  position:absolute;
+  top:0px;
+  background-color: yellow;
+  padding:5px;
+  border-radius: 5px;
+}
+.article img{
+  width:100%;
+  height:400px;
+}
+time{
+  padding:10px;
+}
+#ibis{
+  color:blue;
+}
+/*ここからサイド*/
+.side-container{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  height:40%;
+  border-top: 1px solid black;
+}
+
+.side-name{
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  height:10%;
+  position:relative;
+}
+.side-name h2{
+  text-align: center;
+  position: absolute;
+  top:0;
+}
+.previous{
+  display: none;
+}
+.next{
+  right:0;
+}
+/*ここからスライドショー関係*/
+.side-picture{
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  height:300px;
+}
+.slide{
+  position: absolute;
+  display: none;
+  width:100%;
+  height:300px;
+  margin:0 auto;
+}
+.active{
+  display: block;
+}
+footer{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width:100%;
+  height:200px;
+  background-color: navy;
+  position:relative;
+  bottom:0;
+}
+.footer-container{
+  margin:30px;
+}
+.footer-container img{
+  border-radius: 60px;
+}
+footer h3{
+  color:white;
+}
+
+}
